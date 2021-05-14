@@ -79,7 +79,9 @@ io.on('connection', socket => {
   });
 });
 
-
+router.get("/join", function(req, res){
+  res.sendFile(path.join(__dirname, "public/join.html"));
+});
 
 const PORT = process.env.PORT || 3000;
 
