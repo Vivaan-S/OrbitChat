@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="icon" href="images/Favicon.svg">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" href="https://cdn1.iconfinder.com/data/icons/unigrid-bluetone-basic-vol-2/60/019_076_message_chat_bubble_comment_talk_conversation_2-256.png">
+	<meta property="twitter:title" content="">
+	<meta property="twitter:description" content="">
+	<meta property="twitter:image" href="https://cdn1.iconfinder.com/data/icons/unigrid-bluetone-basic-vol-2/60/019_076_message_chat_bubble_comment_talk_conversation_2-256.png">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+	 crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/stylea.css" />
+	<title>ChatterBox</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<body>
+	<div class="chat-container">
+		<header class="chat-header">
+			<a href="#"><img src="images/orbit.svg" alt="orbit"></a>
+      <h2 id="room-name"></h2>
+
+      <div class="exit">
+          <a href="/join.html">Exit Room</a>
+        </div>
+
+        <div class="users">
+          <a onclick="myFunction()">See All Users</a>
+          
+        </div>
+
+      <script>
+        function myFunction(){
+
+        
+
+        $(".chat-sidebar").toggle();
+        }
+
+      </script>
+        
+      </header>
+      <main class="chat-main">
+        <div class="chat-sidebar">
+          
+          <h3>Users Online:</h3>
+          <br>
+          <br>
+          <ul id="users"></ul>
+        </div>
+        <div class="chat-messages"></div>
+      </main>
+      <div class="chat-form-container">
+        <form id="chat-form">
+          <input
+            style="padding:15px"
+            id="msg"
+            type="text"
+            placeholder="Enter Message"
+            required
+            autocomplete="off"
+          />
+          <button id='mesfes' onclick='messagesincaht = messagesincaht + 1;' class="btn"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+      
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
