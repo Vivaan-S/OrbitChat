@@ -33,6 +33,7 @@ function readCookie(name) {
 	return null;
 }
 
+
 function eraseCookie(name) {
 	createCookie(name,"",-1);
 }
@@ -62,6 +63,7 @@ socket.on('message', message => {
 // Message submit
 chatForm.addEventListener('submit', e => {
   e.preventDefault();
+
 
   // Get message text
   const msg = e.target.elements.msg.value;

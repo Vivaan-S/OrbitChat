@@ -1,6 +1,3 @@
-// lol hi <-- that was vee ess (ITS vee ess - vee ess coder)
-
-// lol bye <-- that was xee
 
 
 const path = require('path');
@@ -18,7 +15,6 @@ const {
   getRoomUsers
 } = require('./utils/users');
 
-const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
@@ -26,7 +22,7 @@ const io = socketio(server);
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-const botName = 'Orbot';
+const botName = 'Blabbot';
 
 // Run when client connects
 io.on('connection', socket => {
@@ -36,8 +32,8 @@ io.on('connection', socket => {
     socket.join(user.room);
 
     // Welcome current user
-    socket.emit('message', formatMessage(botName, 'Welcome to The Chat, '+username+"!"));
-		
+    socket.emit('message', formatMessage(botName, 'Welcome to The Chat, ' + username + "!"));
+
     // Broadcast when a user connects
     socket.broadcast
       .to(user.room)
@@ -67,7 +63,7 @@ io.on('connection', socket => {
     if (user) {
       io.to(user.room).emit(
         'message',
-        formatMessage(botName, `${user.username} has left the chat`)
+        formatMessage(botName, `${user.username} has left the chat.`)
       );
 
       // Send users and room info
@@ -79,13 +75,23 @@ io.on('connection', socket => {
   });
 });
 
-router.get("/join", function(req, res){
-  res.sendFile(path.join(__dirname, "public/join.html"));
+/*
+socket.on("typing", (msg) => {
+  console.log("keypress");
+  socket.broadcast.emit("typing", msg);
+  console.log(msg);
 });
+
+socket.on("stoptyping", (msg) => {
+  socket.broadcast.emit("stoptyping", msg);
+});
+*/
 
 const PORT = process.env.PORT || 3000;
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 
-// formatMessage
+
+
+// formatMessage 
