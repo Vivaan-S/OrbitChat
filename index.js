@@ -1,4 +1,6 @@
-
+// i showed my dad the thing, but as soon as he sent a message... SERVER CRASH BRUH
+// also i dont think we need login/signup...
+// im working on an al chatbot, as our service bot. i invited u, https://replit.com/@A1PHA1/AI-Chatbot
 
 const path = require('path');
 const http = require('http');
@@ -7,6 +9,7 @@ const socketio = require('socket.io');
 const formatMessage = require('./utils/messages');
 const app = express();
 const router = express.Router();
+const bodyParser = require('body-parser');
 
 const {
   userJoin,
@@ -75,6 +78,8 @@ io.on('connection', socket => {
   });
 });
 
+
+
 /*
 socket.on("typing", (msg) => {
   console.log("keypress");
@@ -86,6 +91,9 @@ socket.on("stoptyping", (msg) => {
   socket.broadcast.emit("stoptyping", msg);
 });
 */
+
+
+
 
 const PORT = process.env.PORT || 3000;
 

@@ -1,3 +1,5 @@
+// Unused
+
 let room = document.getElementById('room-name').textContent;
 
 let link = "https:\/\/Orbit.teamdroplet.repl.co"
@@ -13,13 +15,4 @@ function tweet (){
 
 function face (){
   window.open("https://www.facebook.com/sharer/sharer.php?u="+link)
-}
-
-$('.share p').on('click', function() {
-
-  $('.sites').slideToggle('fast', function() {});
-
-  $('.share p').toggleClass('open');
-  $('.share p:after').css('content', '-');
-  $('.sites').toggleClass('shake');
-});
+}2

@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- #share.html -->
 
 <head>
+	<!-- Favicon -->
 	<link rel="icon" href="images/Favicon.svg">
-	<meta property="og:title" content="DropChat">
-	<meta property="og:description" content="DropChat">
-	<meta property="og:image" href="https://cdn1.iconfinder.com/data/icons/unigrid-bluetone-basic-vol-2/60/019_076_message_chat_bubble_comment_talk_conversation_2-256.png">
-	<meta property="twitter:title" content="">
-	<meta property="twitter:description" content=" ">
-	<meta property="twitter:image" href="https://cdn1.iconfinder.com/data/icons/unigrid-bluetone-basic-vol-2/60/019_076_message_chat_bubble_comment_talk_conversation_2-256.png">
-	<meta charset="UTF-8" />
+
+	<!-- Meta Tags -->
+	<meta property="og:title" content="Blabbr">
+	<meta property="og:description" content="Welcome to the next generation of chatting. Fast, easy-to-use, secure, and real-time,  Blabbr is the next generation of chatting.">
+
+	<meta property="twitter:title" content="Blabbr">
+	<meta property="twitter:description" content="Welcome to the next generation of chatting. Fast, easy-to-use, secure, and real-time,  Blabbr is the next generation of chatting.">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+	<!-- Imports -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
 	 crossorigin="anonymous" />
 
- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/style.css" />
-	<title>Blabbr - Chat With Friends in Real time</title>
+
+	<title>Blabbr - Chat Online With Friends in Real time</title>
 </head>
 
-<script src="js/fadefrombottom.js"></script>
 <body>
+	<!-- Preloader --> <!--
+  <div class="preloader">
+
+    <div class="image">
+      <center>
+      <img src="images/blabbr.svg" alt="spinner" id="logo-loader">
+      </center>
+    </div>
+    
+  </div> -->
+
 
 
 
@@ -32,108 +45,105 @@
 	<div class="wrapper">
 		<div id="skew1" class="cus-div">
 			<div class="nav" id="nav">
+        <!-- Navigation -->
 				<div class="links">
 					<a class='signup' href="#">Sign Up</a>
 					<a class="contact" href="#">Contact</a>
 					<a class="about" href="#">About</a>
 					<a class="home" href="#">Home</a>
-
 				</div>
+
 				<a href="#"><img src="images/blabbr.svg" alt="Blabbr"></a>
         </div>
         <div class="content">
 
-          <h1>Blabbr</h1>
-          <p>Welcome to the next generation of chatting.<br><b> Blabbr is here</b>.<br>Secure, Fast, and Real-Time, Blabbr is the best choice for chatting online&#8212; no download required.</p> 
+          <!-- Description -->
+          <h1 class="title">Blabbr</h1>
+          <p class="desc">Welcome to the next generation of chatting.<br><b> Blabbr is here</b>.<br>Secure, Fast, and Real-Time, Blabbr is the best choice for chatting online&#8212; no download required.</p> 
 
+          <!-- Arrows -->
           <div class="arrows">
             <div class="container">
               <div class="one"><a href="#why-us"><span class="material-icons">keyboard_arrow_down</span></a></div>
 
               <div class="two"><a href="#why-us"><span class="material-icons">keyboard_arrow_down</span></a></div>
             </div>
-              
-          
-
           </div>
         </div>
       </div>
-<h1></h1>
+	 </div>
 
 
-
-<!--
-      <div class="showcase">
-        <img src="images/Img.png" alt="img">
-      </div>
--->
-
+<!-- Display Image -->
 <div class="image-placeholder">
   <img src="images/browser.png" alt="test">
 </div>
 
-<div class="why" id="why-us">
+<!-- Cards -->
+<div class="cards">
+<div class="row" id="why-us">
   <h1>Why Blabbr?</h1>
-<center>
-  <div class="box">
-    <h2>Fast <span class="material-icons">
-    speed
-    </span> </h2>
-    <div class="border"></div>
-    <p>Our servers update every millisecond, granting our users fast speed. It takes about 1 millisecond for messages to appear on another user’s device.</p>
+  <div class="column">
+    <div class="card">
+      <h2>Fast <span class="material-icons">
+      speed
+      </span> </h2>
+      <div class="border"></div>
+      <p>Our servers update every millisecond, granting our users fast speed. It takes about 1 millisecond for messages to appear on another user’s device.</p>
+    </div>
   </div>
-	<div class="box">
-    <h2>Real-Time <span class="material-icons">
-    bolt
-    </span> </h2>
-    <div class="border"></div>
-    <p>Our Node server runs 24/7 meaning messages are getting passed around whenever, wherever. You can always be in touch with your friends.</p>
+  <div class="column">
+    <div class="card">
+      <h2>Real-Time <span class="material-icons">
+      bolt
+      </span> </h2>
+      <div class="border"></div>
+      <p>Our Node server runs 24/7 meaning messages are getting passed around whenever, wherever. You can always be in touch with your friends.</p>
+    </div>
   </div>
-	<div class="box">
-    <h2>Secure <span class="material-icons">
-    lock
-    </span> </h2>
-    <div class="border"></div>
-    <p>If you join a room, you can only see the messages sent <i>after</i> you joined, and we don’t save any of your conversations either, so you can talk with privacy.</p>
+  <div class="column">
+    <div class="card">
+      <h2>Secure <span class="material-icons">
+      lock
+      </span> </h2>
+      <div class="border"></div>
+      <p>You can only see the messages sent <i>after</i> you joined, and we don’t save any of your conversations either, so you can talk with privacy.</p>
+    </div>
   </div>
+	</div>
+	<h2 style="color: black; text-align: center; font-size: 50px;">What's the catch?</h2>
+	<p>Nothing! Our service is 100% Free to use,<br> no hidden fees or charges. Just sign up (dosen’t require an email adress), <br>and you’re good to go!</p>
+
+
+	<footer style="color: #1E2129;"><p style="color: white;">&copy; 2021 Team Blabbr; --VSCoder and -Xenity-. Find us on Scratch.</p></footer>
 </div>
+
 </center>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Javascript -->
+<!-- Imports -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+     integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+     crossorigin="anonymous"></script>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+     <!-- Scripts -->
+     <script src="js/scroll.js"></script>
+     <script src="js/load.js"></script>
+
+		 <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CDL2P47523"></script>
 <script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
+  gtag('config', 'G-CDL2P47523');
 </script>
 
-
-     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
-      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
-      crossorigin="anonymous"
-    ></script>
     </div>
 	</body>
 </html>
